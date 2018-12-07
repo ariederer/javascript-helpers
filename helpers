@@ -1,0 +1,15 @@
+//-------------------------------------
+//remove duplicate values from an array
+//-------------------------------------
+
+var arrayToDedupe = [1,2,2,2,"cat","cat","bat"];
+
+var removeDuplicates = function(array){
+  uniqueArray = array.filter(function(item, position) {
+    return array.indexOf(item) == position;
+})
+  return uniqueArray;
+}
+
+
+console.log(removeDuplicates(arrayToDedupe));
